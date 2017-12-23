@@ -103,7 +103,37 @@ namespace FortuneTellerRedo
 
             //Where's the vacation home?
             Console.WriteLine("How many siblings do you have?");
+            int siblings = int.Parse(Console.ReadLine());
+            string city;
 
+            if (siblings == 0)
+            {
+                city = "Amsterdam";
+            }
+            else if (siblings == 1)
+            {
+                city = "New York City";
+            }
+            else if (siblings == 2)
+            {
+                city = "London";
+            }
+            else if (siblings == 3)
+            {
+                city = "Dubai";
+            }
+            else if (siblings > 3)
+            {
+                city = "Orlando";
+            }
+            else
+            {
+                city = "WWII Germany";
+            }
+
+
+            //results
+            
         }
     }
 }
