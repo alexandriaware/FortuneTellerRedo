@@ -133,6 +133,8 @@ namespace FortuneTellerRedo
 
 
             //results
+            Console.WriteLine("Here's your fortune:");
+            Console.WriteLine(firstName + " " + lastName + " will retire in " + retirement + " years with " + money + " in the bank, a \nvacation home in " + city + ", and a " + color + ".");
             
         }
     }
