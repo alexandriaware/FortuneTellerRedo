@@ -18,10 +18,30 @@ namespace FortuneTellerRedo
             string lastName = Console.ReadLine().ToUpper();
 
 
+            //How long till retirement?
             Console.WriteLine("How old are you?");
+            int age = int.Parse(Console.ReadLine());
+            int retirement;
+            
+            if ((age % 2) == 0)
+            {
+                retirement = 10;
+            }
+            else
+            {
+                retirement = 15;
+            }
 
+
+            //How fat is your bank account?
+            Console.WriteLine("What month were you born in?");
+
+
+            //What will you drive?
             Console.WriteLine("What is your favorite ROYGBIV color?");
 
+
+            //Where's the vacation home?
             Console.WriteLine("How many siblings do you have?");
 
         }
