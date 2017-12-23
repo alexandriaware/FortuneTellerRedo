@@ -64,6 +64,7 @@ namespace FortuneTellerRedo
             {
                 Console.WriteLine("Choose from red, orange, yellow, green, blue, indigo, or violet.");
             }
+            color = Console.ReadLine().ToLower();
 
             switch (color)
             {
