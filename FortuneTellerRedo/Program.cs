@@ -34,7 +34,26 @@ namespace FortuneTellerRedo
 
 
             //How fat is your bank account?
-            Console.WriteLine("What month were you born in?");
+            Console.WriteLine("What month were you born in? Give a number.");
+            int month = int.Parse(Console.ReadLine());
+            string money;
+
+            if (month >= 1 && month <= 4)
+            {
+                money = "$10,000";
+            }
+            else if (month >= 5 && month <= 8)
+            {
+                money = "$2,850";
+            }
+            else if (month >=9 && month <= 12)
+            {
+                money = "$91.08";
+            }
+            else
+            {
+                money = "nothing";
+            }
 
 
             //What will you drive?
