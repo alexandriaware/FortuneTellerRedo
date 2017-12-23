@@ -57,7 +57,48 @@ namespace FortuneTellerRedo
 
 
             //What will you drive?
-            Console.WriteLine("What is your favorite ROYGBIV color?");
+            Console.WriteLine("What is your favorite ROYGBIV color? Say \"help\" to list your options.");
+            string color = Console.ReadLine().ToLower();
+
+            if (color == "help")
+            {
+                Console.WriteLine("Choose from red, orange, yellow, green, blue, indigo, or violet.");
+            }
+
+            switch (color)
+            {
+                case ("red"):
+                    color = "Motorized Scooter";
+                    break;
+
+                case ("orange"):
+                    color = "Chubby Pony";
+                    break;
+
+                case ("yellow"):
+                    color = "Hearse";
+                    break;
+
+                case ("green"):
+                    color = "Nissan Leaf";
+                    break;
+
+                case ("blue"):
+                    color = "Hoverboard";
+                    break;
+
+                case ("indigo"):
+                    color = "Shopping Cart";
+                    break;
+
+                case ("violet"):
+                    color = "Tesla Model S Hybrid";
+                    break;
+
+                default:
+                    color = "squeaky rollerskates";
+                    break;
+            }
 
 
             //Where's the vacation home?
